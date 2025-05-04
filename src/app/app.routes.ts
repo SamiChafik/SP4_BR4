@@ -9,5 +9,6 @@ export const routes: Routes = [
     { path: 'login', component: LoginComponent},
     { path: 'add', component: RecipeFormComponent},
     { path: 'recipes', component: RecipeListComponent},
+    { path: 'edit/:id', component: RecipeFormComponent},
     { path: '**', redirectTo: '' }
 ];
