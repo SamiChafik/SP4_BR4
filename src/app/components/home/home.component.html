@@ -10,21 +10,9 @@
 <section class="trending" id="explore">
     <h2>Recettes Tendances</h2>
     <div class="recipe-grid">
-        <div class="recipe-card">
-            <img src="" alt="Pasta Carbonara" class="recipe-img">
-            <div class="recipe-title">Pâtes Carbonara</div>
-        </div>
-        <div class="recipe-card">
-            <img src="" alt="Chocolate Cake" class="recipe-img">
-            <div class="recipe-title">Gâteau au Chocolat</div>
-        </div>
-        <div class="recipe-card">
-            <img src="" alt="Ratatouille" class="recipe-img">
-            <div class="recipe-title">Ratatouille</div>
-        </div>
-        <div class="recipe-card">
-            <img src="" alt="Salad" class="recipe-img">
-            <div class="recipe-title">Salade César</div>
+        <div *ngFor="let recipe of getLastFourRecipes()" class="recipe-card">
+            <img [src]="getImageUrl(recipe.imageUrl)" [alt]="recipe.name">
+            <div class="recipe-title">{{ recipe.name }}</div>
         </div>
     </div>
 </section>
