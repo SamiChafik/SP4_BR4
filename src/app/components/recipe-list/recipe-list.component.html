@@ -9,8 +9,8 @@
         <div class="recipe-details">
           <h3>{{ recipe.name }}</h3>
           <div class="recipe-actions">
-            <button class="edit-btn" (click)="editRecipe(recipe.id)">Edit</button>
-            <button class="delete-btn" (click)="deleteRecipe(recipe.id)">Delete</button>
+            <button class="edit-btn" (click)="editRecipe(recipe.id)" *ngIf="authService.isLoggedIn()">Edit</button>
+            <button class="delete-btn" (click)="deleteRecipe(recipe.id)" *ngIf="authService.isLoggedIn()">Delete</button>
           </div>
         </div>
       </div>

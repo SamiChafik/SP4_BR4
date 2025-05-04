@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RecipeService } from '../../services/recipe.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-recipe-list',
@@ -18,7 +19,8 @@ export class RecipeListComponent {
 
   constructor(
     private recipeService: RecipeService,
-    private router: Router
+    private router: Router,
+    public authService: AuthService
   ) { }
   ngOnInit(): void {
     this.recipeService.getRecipes().subscribe(data => {
