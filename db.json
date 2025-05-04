@@ -1,0 +1,166 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "name": "Ratatouille",
+      "ingredients": [
+        "1 aubergine",
+        "2 courgettes",
+        "1 poivron rouge",
+        "1 poivron jaune",
+        "4 tomates",
+        "1 oignon",
+        "2 gousses d'ail",
+        "3 cuillères à soupe d'huile d'olive",
+        "Herbes de Provence",
+        "Sel et poivre"
+      ],
+      "steps": [
+        "Couper tous les légumes en dés",
+        "Faire revenir l'oignon et l'ail dans l'huile d'olive",
+        "Ajouter les légumes un par un en commençant par ceux qui cuisent le plus longtemps",
+        "Saisonner avec les herbes, sel et poivre",
+        "Laisser mijoter à feu doux 40 minutes"
+      ],
+      "imageUrl": "https://example.com/ratatouille.jpg",
+      "category": "Plat principal"
+    },
+    {
+      "id": "2",
+      "name": "Crêpes Suzette",
+      "ingredients": [
+        "250g de farine",
+        "4 œufs",
+        "500ml de lait",
+        "50g de beurre",
+        "2 oranges",
+        "50g de sucre",
+        "5cl de Grand Marnier"
+      ],
+      "steps": [
+        "Mélanger farine, œufs et lait pour obtenir une pâte lisse",
+        "Faire fondre le beurre et l'ajouter à la pâte",
+        "Faire cuire les crêpes dans une poêle chaude",
+        "Presser le jus des oranges",
+        "Faire un caramel avec le sucre, ajouter le jus d'orange",
+        "Flamber avec le Grand Marnier",
+        "Plier les crêpes dans la sauce"
+      ],
+      "imageUrl": "https://example.com/crepes-suzette.jpg",
+      "category": "Dessert"
+    },
+    {
+      "id": "3",
+      "name": "Soupe à l'oignon",
+      "ingredients": [
+        "6 gros oignons",
+        "50g de beurre",
+        "1 cuillère à soupe de farine",
+        "1.5L de bouillon de bœuf",
+        "200g de fromage râpé",
+        "6 tranches de pain",
+        "Sel et poivre"
+      ],
+      "steps": [
+        "Émincer finement les oignons",
+        "Les faire revenir dans le beurre jusqu'à caramélisation",
+        "Saupoudrer de farine et mélanger",
+        "Ajouter le bouillon et laisser mijoter 30 minutes",
+        "Préchauffer le four à 200°C",
+        "Verser la soupe dans des bols à soupe",
+        "Ajouter une tranche de pain et du fromage",
+        "Gratiner au four 10 minutes"
+      ],
+      "imageUrl": "https://example.com/soupe-oignon.jpg",
+      "category": "Entrée"
+    },
+    {
+      "id": "4",
+      "name": "Quiche Lorraine",
+      "ingredients": [
+        "1 pâte brisée",
+        "200g de lardons",
+        "4 œufs",
+        "20cl de crème fraîche",
+        "20cl de lait",
+        "Noix de muscade",
+        "Sel et poivre"
+      ],
+      "steps": [
+        "Préchauffer le four à 180°C",
+        "Foncer un moule à tarte avec la pâte",
+        "Faire revenir les lardons à sec",
+        "Battre les œufs avec la crème et le lait",
+        "Ajouter noix de muscade, sel et poivre",
+        "Répartir les lardons sur la pâte",
+        "Verser l'appareil à quiche",
+        "Cuire 40 minutes"
+      ],
+      "imageUrl": "https://example.com/quiche-lorraine.jpg",
+      "category": "Plat principal"
+    },
+    {
+      "id": "5",
+      "name": "Tarte Tatin",
+      "ingredients": [
+        "6 pommes",
+        "100g de sucre",
+        "50g de beurre",
+        "1 pâte feuilletée",
+        "1 cuillère à café de cannelle"
+      ],
+      "steps": [
+        "Peler et couper les pommes en quartiers",
+        "Faire fondre le sucre dans une poêle jusqu'à caramel",
+        "Ajouter le beurre et bien mélanger",
+        "Disposer les pommes dans le caramel",
+        "Recouvrir avec la pâte feuilletée",
+        "Cuire 30 minutes à 200°C",
+        "Retourner la tarte à la sortie du four"
+      ],
+      "imageUrl": "https://example.com/tarte-tatin.jpg",
+      "category": "Dessert"
+    },
+    {
+      "id": "6",
+      "name": "Salade Niçoise",
+      "ingredients": [
+        "4 tomates",
+        "2 œufs durs",
+        "1 boîte de thon",
+        "100g d'haricots verts",
+        "1 poivron vert",
+        "10 olives noires",
+        "1 petite boîte d'anchois",
+        "Huile d'olive",
+        "Vinaigre",
+        "Sel et poivre"
+      ],
+      "steps": [
+        "Cuire les haricots verts à l'eau bouillante 5 minutes",
+        "Couper les tomates et le poivron en morceaux",
+        "Couper les œufs en quartiers",
+        "Égoutter le thon",
+        "Tout disposer dans un grand plat",
+        "Ajouter les olives et anchois",
+        "Assaisonner avec huile, vinaigre, sel et poivre"
+      ],
+      "imageUrl": "https://example.com/salade-nicoise.jpg",
+      "category": "Entrée"
+    },
+    {
+      "name": "test",
+      "ingredients": [
+        "1",
+        "2"
+      ],
+      "steps": [
+        "3",
+        "4"
+      ],
+      "imageUrl": "FAW-recipes-pasta-sausage-basil-and-mustard-hero-06-cfd1c0a2989e474ea7e574a38182bbee.jpg",
+      "category": "Entrée",
+      "id": "586a"
+    }
+  ]
+}
