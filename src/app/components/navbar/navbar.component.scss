@@ -18,7 +18,7 @@
   .burger-button {
     background: none;
     border: none;
-    color: white;
+    color: black;
     font-size: 1.5rem;
     cursor: pointer;
   }
@@ -26,6 +26,11 @@
   .app-title {
     margin-left: 1rem;
     font-weight: bold;
+    color: black;
+  }
+
+  h1 {
+    color: black;
   }
   
   .side-menu {
@@ -36,8 +41,10 @@
     height: 100vh;
     background: #84bd89;
     transition: left 0.3s ease;
-    z-index: 1001;
-  }
+    z-index: 2001;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 2px 0px 2px 0px rgba(32, 32, 32, 0.2); 
+}
   
   .side-menu.active {
     left: 0;
@@ -47,7 +54,7 @@
     display: block;
     width: 100%;
     padding: 1rem;
-    color: white;
+    color: black;
     background: none;
     border: none;
     text-align: left;
@@ -56,6 +63,7 @@
   
   .menu-item:hover {
     background: #444;
+    color: white;
   }
   
   .overlay {
