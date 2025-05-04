@@ -1,0 +1,42 @@
+<div class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <h2>Bienvenue</h2>
+        <p>Veuillez saisir vos identifiants pour vous connecter</p>
+      </div>
+  
+      <form class="login-form" [formGroup]="loginform" (ngSubmit)="proceedlogin()">
+        <div class="form-error" *ngIf="loginform.errors?.['invalidCredentials']" style="color: red">
+          Email ou mot de passe incorrect
+        </div>
+        <div class="form-error" *ngIf="loginform.errors?.['serverError']">
+          Échec de la connexion. Veuillez réessayer plus tard.
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Adresse Email</label>
+          <input type="text" placeholder="Email" formControlName="email">
+          <div class="validation-error" *ngIf="loginform.get('email')?.invalid && loginform.get('email')?.touched">
+            <span *ngIf="loginform.get('email')?.errors?.['required']">L'email est requis</span>
+            <span *ngIf="loginform.get('email')?.errors?.['email']">Veuillez saisir un email valide</span>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="password">Mot de passe</label>
+          <input type="password" placeholder="Mot de passe" formControlName="password">
+          <div class="validation-error" *ngIf="loginform.get('password')?.invalid && loginform.get('password')?.touched">
+            <span *ngIf="loginform.get('password')?.errors?.['required']">Le mot de passe est requis</span>
+          </div>
+        </div>
+  
+        <button type="submit" class="login-button" [disabled]="loginform.invalid">
+          Se connecter
+        </button>
+      </form>
+  
+      <div class="signup-link">
+        Vous n'avez pas de compte ? <a (click)="GoToRegister()">S'inscrire</a>
+      </div>
+    </div>
+  </div>
