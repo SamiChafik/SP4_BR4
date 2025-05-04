@@ -18,10 +18,13 @@
         </button>
         <h1>FlavorShare</h1>
       </div>
-      <button class="menu-item" (click)="navigateTo('home')">Home</button>
-      <button class="menu-item" (click)="navigateTo('add')">Add</button>
+      <button class="menu-item" (click)="navigateTo('home')">Accueil</button>
+      <button class="menu-item" (click)="navigateTo('add')" *ngIf="authService.isLoggedIn()">Ajouter</button>
       <button class="menu-item" (click)="navigateTo('recipes')">Recipes</button>
-      <button class="menu-item" (click)="navigateTo('login')">Login</button>
+      <button class="menu-item" (click)="navigateTo('login')" *ngIf="!authService.isLoggedIn()">Se Connecter</button>
+      <button class="menu-item" (click)="navigateTo('register')" *ngIf="!authService.isLoggedIn()">S'inscrire</button>
+      <button class="menu-item" (click)="Logout()" *ngIf="authService.isLoggedIn()">Déconnexion</button>
+
     </div>
   
     <div class="overlay" *ngIf="isMenuOpen" (click)="toggleSideMenu()"></div>
