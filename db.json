@@ -162,5 +162,13 @@
       "category": "Entrée",
       "id": "586a"
     }
+  ],
+  "user": [
+    {
+      "id": "91b8",
+      "username": "admin",
+      "password": "123",
+      "email": "admin@gmail.com"
+    }
   ]
 }
