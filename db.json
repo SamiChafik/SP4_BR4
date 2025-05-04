@@ -22,7 +22,7 @@
         "Saisonner avec les herbes, sel et poivre",
         "Laisser mijoter à feu doux 40 minutes"
       ],
-      "imageUrl": "https://example.com/ratatouille.jpg",
+      "imageUrl": "img1.jpg",
       "category": "Plat principal"
     },
     {
@@ -46,7 +46,7 @@
         "Flamber avec le Grand Marnier",
         "Plier les crêpes dans la sauce"
       ],
-      "imageUrl": "https://example.com/crepes-suzette.jpg",
+      "imageUrl": "img2.jpg",
       "category": "Dessert"
     },
     {
@@ -71,8 +71,8 @@
         "Ajouter une tranche de pain et du fromage",
         "Gratiner au four 10 minutes"
       ],
-      "imageUrl": "https://example.com/soupe-oignon.jpg",
-      "category": "Entrée"
+      "imageUrl": "20220316211706-now-20open-20-81.webp",
+      "category": "Entrée"     
     },
     {
       "id": "4",
@@ -96,8 +96,8 @@
         "Verser l'appareil à quiche",
         "Cuire 40 minutes"
       ],
-      "imageUrl": "https://example.com/quiche-lorraine.jpg",
-      "category": "Plat principal"
+      "imageUrl": "135915_w1024h768c1cx999cy749cxt0cyt0cxb1999cyb1499.webp",
+      "category": "Plat principal"      
     },
     {
       "id": "5",
@@ -118,7 +118,7 @@
         "Cuire 30 minutes à 200°C",
         "Retourner la tarte à la sortie du four"
       ],
-      "imageUrl": "https://example.com/tarte-tatin.jpg",
+      "imageUrl": "tarte-tatin-640.jpg",
       "category": "Dessert"
     },
     {
@@ -145,7 +145,7 @@
         "Ajouter les olives et anchois",
         "Assaisonner avec huile, vinaigre, sel et poivre"
       ],
-      "imageUrl": "https://example.com/salade-nicoise.jpg",
+      "imageUrl": "i34581-salade-nicoise-rapide.jpg",
       "category": "Entrée"
     },
     {
