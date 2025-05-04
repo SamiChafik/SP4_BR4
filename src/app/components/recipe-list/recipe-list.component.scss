@@ -1,0 +1,225 @@
+.recipe-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+      font-size: 2rem;
+    }
+  }
+  
+  .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 10px;
+  }
+  
+  .recipe-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  .recipe-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  
+  .recipe-details {
+    padding: 15px;
+  
+    h3 {
+      margin: 0 0 10px 0;
+      color: #333;
+      font-size: 1.2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  .recipe-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  
+    button {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.2s ease;
+  
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  
+    .edit-btn {
+      background-color: #4CAF50;
+      color: white;
+  
+      &:hover {
+        background-color: #3e8e41;
+      }
+    }
+  
+    .delete-btn {
+      background-color: #f44336;
+      color: white;
+  
+      &:hover {
+        background-color: #d32f2f;
+      }
+    }
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 1.1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+.blur-background {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+  }
+  
+  .recipe-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+  }
+  
+  .recipe-modal {
+    background: white;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease;
+  
+    .close-btn {
+      position: absolute;
+      background: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 32px;
+      cursor: pointer;
+      color: #666;
+      z-index: 10;
+
+      align-items: center;
+  
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .modal-content {
+    padding: 30px;
+  
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+  
+    .recipe-meta {
+      display: flex;
+      gap: 20px;
+      margin: 15px 0;
+      color: #666;
+    }
+  
+    .ingredients, .instructions {
+      margin: 25px 0;
+  
+      h3 {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+      }
+    }
+  
+    ul, ol {
+      padding-left: 20px;
+    }
+  
+    li {
+      margin-bottom: 8px;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .recipe-card {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  
+  .recipe-actions {
+    pointer-events: none;
+    
+    button {
+      pointer-events: auto;
+    }
+  }

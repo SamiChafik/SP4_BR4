@@ -1,0 +1,46 @@
+<div class="recipe-list-container">
+    <h2>Recipe List</h2>
+    
+    <div class="recipes-grid">
+      <div *ngFor="let recipe of recipes" class="recipe-card" >
+        <div class="recipe-image" (click)="showRecipeDetails(recipe)">
+          <img [src]="getImageUrl(recipe.imageUrl)" [alt]="recipe.name">
+        </div>
+        <div class="recipe-details">
+          <h3>{{ recipe.name }}</h3>
+          <div class="recipe-actions">
+            <button class="edit-btn" (click)="editRecipe(recipe.id)">Edit</button>
+            <button class="delete-btn" (click)="deleteRecipe(recipe.id)">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div *ngIf="recipes.length === 0" class="empty-state">
+      No recipes found. Add some recipes to get started!
+    </div>
+
+    <div *ngIf="selectedRecipe" class="recipe-modal-overlay" (click)="closeRecipeDetails()">
+        <div class="recipe-modal" (click)="$event.stopPropagation()">
+          <button class="close-btn" (click)="closeRecipeDetails()">×</button>
+          <div class="modal-image">
+            <img [src]="getImageUrl(selectedRecipe.imageUrl)" [alt]="selectedRecipe.name">
+          </div>
+          <div class="modal-content">
+            <h2>{{ selectedRecipe.name }}</h2>
+            <div class="ingredients">
+              <h3>Ingredients</h3>
+              <ul>
+                <li *ngFor="let ingredient of selectedRecipe.ingredients">{{ ingredient }}</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h3>Instructions</h3>
+              <ol>
+                <li *ngFor="let step of selectedRecipe.steps">{{ step }}</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
